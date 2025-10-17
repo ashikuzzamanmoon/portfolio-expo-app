@@ -31,7 +31,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. Clone the repository (if you are on a new machine):
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/ashikuzzamanmoon/portfolio-expo-app.git
    cd your-repo-name
    ```
 

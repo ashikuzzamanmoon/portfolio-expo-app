@@ -12,9 +12,8 @@ export default function AppScreen() {
       <WebView
         source={{ uri: MY_WEBSITE_URL }}
         style={styles.webview}
-        // নিচের props গুলো স্ক্রলিং অভিজ্ঞতা উন্নত করবে
-        pullToRefreshEnabled={true} // নিচের দিকে টেনে রিফ্রেশ করার সুবিধা যোগ করে
-        showsVerticalScrollIndicator={false} // ডানপাশের ভার্টিকাল স্ক্রলবার হাইড করে দেয়
+        pullToRefreshEnabled={true}
+        showsVerticalScrollIndicator={false}
       />
     </SafeAreaView>
   );
