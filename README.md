@@ -1,50 +1,80 @@
-# Welcome to your Expo app 👋
+# Portfolio App (Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a mobile application for my personal portfolio website. It is built with Expo (React Native) and uses a `WebView` to display the live website, providing a native app experience for users.
 
-## Get started
+The original portfolio website is built with Next.js.
 
-1. Install dependencies
+## ✨ Key Features & Technology
+
+- Framework: Built with the latest Expo SDK (React Native).
+
+- Core Functionality: Uses `react-native-webview` to embed the portfolio website directly into the app.
+
+- Routing: Utilizes Expo Router for file-based routing structure.
+
+- Build Service: Configured for EAS (Expo Application Services) to build `.apk` and `.aab` files for Android.
+
+- Language: Written in TypeScript.
+
+## 🚀 Getting Started (For Local Development)
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) (LTS version recommended)
+- `npm` or `yarn` package manager
+- Expo Go app installed on your Android or iOS device.
+
+### Installation & Running
+
+1. Clone the repository (if you are on a new machine):
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. Install dependencies:
+   This command will install all the necessary packages for the project.
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the development server:
+   This will start the Metro server and show a QR code in your terminal.
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Open the app:
+   Scan the QR code from the terminal using the Expo Go app on your phone. The app should now be running on your device.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Building the App (Generating APK / AAB)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+This project is configured to use EAS Build for creating standalone application files.
 
-## Get a fresh project
+1. Install EAS CLI globally (if you haven't already):
 
-When you're ready, run:
+   ```bash
+   npm install -g eas-cli
+   ```
 
-```bash
-npm run reset-project
-```
+2. Log in to your Expo account:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+   ```bash
+   eas login
+   ```
 
-## Learn more
+3. Start the build for Android:
+   To create a production-ready .aab file for the Google Play Store, run the following command:
+   ```bash
+   eas build -p android --profile production
+   ```
+   After the build is complete, you will get a downloadable link for your .aab file.
 
-To learn more about developing your project with Expo, look at the following resources:
+### Purpose
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The main goal of this project is to make the portfolio website easily accessible to users on their mobile devices through a native application wrapper.
